@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@color/teal_200" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@color/purple" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@color/red" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/color4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@color/blue" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/btChangeBackgroudColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/black"
+        android:padding="15dp"
+        android:text="Trocar Cor de Fundo"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
